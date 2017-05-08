@@ -1,6 +1,6 @@
 'use strict';
 import { NativeModules } from 'react-native';
 
-const DocumentInteractionController = NativeModules.DocumentInteractionController;
+const DocumentInteraction = NativeModules.DocumentInteraction;
 
-export default module.exports = DocumentInteractionController;
+export default module.exports = DocumentInteraction;

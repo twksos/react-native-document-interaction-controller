@@ -6,9 +6,9 @@
 //  Copyright © 2017 Liaoyuan. All rights reserved.
 //
 
-#import "RCTDocumentInteractionController.h"
+#import "RCTDocumentInteraction.h"
 
-@implementation RCTDocumentInteractionController
+@implementation RCTDocumentInteraction
 
 RCT_EXPORT_MODULE();
 

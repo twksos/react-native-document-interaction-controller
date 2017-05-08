@@ -7,15 +7,15 @@
 //
 
 #if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
+    #import "RCTBridgeModule.h"
 #else
-#import <React/RCTBridgeModule.h>
+    #import <React/RCTBridgeModule.h>
 #endif
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIDocumentInteractionController.h>
 #import <UIKit/UIWindow.h>
 
-@interface RCTDocumentInteractionController : NSObject <RCTBridgeModule, UIDocumentInteractionControllerDelegate>
+@interface RCTDocumentInteraction : NSObject <RCTBridgeModule, UIDocumentInteractionControllerDelegate>
 
 @end

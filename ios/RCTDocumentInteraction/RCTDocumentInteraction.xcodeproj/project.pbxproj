@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CAE2A901EC050CD0001FB9F /* RCTDocumentInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE2A8F1EC050CD0001FB9F /* RCTDocumentInteractionController.m */; };
-		9CAE2A911EC050CD0001FB9F /* RCTDocumentInteractionController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CAE2A8E1EC050CD0001FB9F /* RCTDocumentInteractionController.h */; };
+		9C2CDC5F1EC06A7B003AFE45 /* RCTDocumentInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CDC5E1EC06A7B003AFE45 /* RCTDocumentInteraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +17,15 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				9CAE2A911EC050CD0001FB9F /* RCTDocumentInteractionController.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9CAE2A8B1EC050CD0001FB9F /* libRCTDocumentInteractionController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTDocumentInteractionController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CAE2A8E1EC050CD0001FB9F /* RCTDocumentInteractionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTDocumentInteractionController.h; sourceTree = "<group>"; };
-		9CAE2A8F1EC050CD0001FB9F /* RCTDocumentInteractionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTDocumentInteractionController.m; sourceTree = "<group>"; };
+		9C2CDC5D1EC06A7B003AFE45 /* RCTDocumentInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTDocumentInteraction.h; path = RCTDocumentInteraction/RCTDocumentInteraction.h; sourceTree = SOURCE_ROOT; };
+		9C2CDC5E1EC06A7B003AFE45 /* RCTDocumentInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTDocumentInteraction.m; path = RCTDocumentInteraction/RCTDocumentInteraction.m; sourceTree = SOURCE_ROOT; };
+		9CAE2A8B1EC050CD0001FB9F /* libRCTDocumentInteraction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTDocumentInteraction.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +42,7 @@
 		9CAE2A821EC050CD0001FB9F = {
 			isa = PBXGroup;
 			children = (
-				9CAE2A8D1EC050CD0001FB9F /* RCTDocumentInteractionController */,
+				9CAE2A8D1EC050CD0001FB9F /* RCTDocumentInteraction */,
 				9CAE2A8C1EC050CD0001FB9F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,26 +50,27 @@
 		9CAE2A8C1EC050CD0001FB9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CAE2A8B1EC050CD0001FB9F /* libRCTDocumentInteractionController.a */,
+				9CAE2A8B1EC050CD0001FB9F /* libRCTDocumentInteraction.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CAE2A8D1EC050CD0001FB9F /* RCTDocumentInteractionController */ = {
+		9CAE2A8D1EC050CD0001FB9F /* RCTDocumentInteraction */ = {
 			isa = PBXGroup;
 			children = (
-				9CAE2A8E1EC050CD0001FB9F /* RCTDocumentInteractionController.h */,
-				9CAE2A8F1EC050CD0001FB9F /* RCTDocumentInteractionController.m */,
+				9C2CDC5D1EC06A7B003AFE45 /* RCTDocumentInteraction.h */,
+				9C2CDC5E1EC06A7B003AFE45 /* RCTDocumentInteraction.m */,
 			);
+			name = RCTDocumentInteraction;
 			path = RCTDocumentInteractionController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CAE2A8A1EC050CD0001FB9F /* RCTDocumentInteractionController */ = {
+		9CAE2A8A1EC050CD0001FB9F /* RCTDocumentInteraction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CAE2A941EC050CD0001FB9F /* Build configuration list for PBXNativeTarget "RCTDocumentInteractionController" */;
+			buildConfigurationList = 9CAE2A941EC050CD0001FB9F /* Build configuration list for PBXNativeTarget "RCTDocumentInteraction" */;
 			buildPhases = (
 				9CAE2A871EC050CD0001FB9F /* Sources */,
 				9CAE2A881EC050CD0001FB9F /* Frameworks */,
@@ -81,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = RCTDocumentInteractionController;
+			name = RCTDocumentInteraction;
 			productName = RCTDocumentInteractionController;
-			productReference = 9CAE2A8B1EC050CD0001FB9F /* libRCTDocumentInteractionController.a */;
+			productReference = 9CAE2A8B1EC050CD0001FB9F /* libRCTDocumentInteraction.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9CAE2A861EC050CD0001FB9F /* Build configuration list for PBXProject "RCTDocumentInteractionController" */;
+			buildConfigurationList = 9CAE2A861EC050CD0001FB9F /* Build configuration list for PBXProject "RCTDocumentInteraction" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CAE2A8A1EC050CD0001FB9F /* RCTDocumentInteractionController */,
+				9CAE2A8A1EC050CD0001FB9F /* RCTDocumentInteraction */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CAE2A901EC050CD0001FB9F /* RCTDocumentInteractionController.m in Sources */,
+				9C2CDC5F1EC06A7B003AFE45 /* RCTDocumentInteraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +251,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CAE2A861EC050CD0001FB9F /* Build configuration list for PBXProject "RCTDocumentInteractionController" */ = {
+		9CAE2A861EC050CD0001FB9F /* Build configuration list for PBXProject "RCTDocumentInteraction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CAE2A921EC050CD0001FB9F /* Debug */,
@@ -261,13 +260,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CAE2A941EC050CD0001FB9F /* Build configuration list for PBXNativeTarget "RCTDocumentInteractionController" */ = {
+		9CAE2A941EC050CD0001FB9F /* Build configuration list for PBXNativeTarget "RCTDocumentInteraction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CAE2A951EC050CD0001FB9F /* Debug */,
 				9CAE2A961EC050CD0001FB9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

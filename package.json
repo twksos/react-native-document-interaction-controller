@@ -1,20 +1,19 @@
 {
-  "name": "react-native-document-interaction-controller",
+  "name": "react-native-document-interaction",
   "version": "0.1.0",
-  "description": "React Native Document Interaction Controller",
+  "description": "React Native Document Interaction",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twksos/react-native-document-interaction-controller.git"
+    "url": "git+https://github.com/twksos/react-native-document-interaction.git"
   },
   "keywords": [
     "react",
     "native",
     "react-native",
-    "document interaction controller",
     "document interaction",
     "document",
     "interaction"
@@ -22,9 +21,9 @@
   "author": "Guangcheng Wei <twksos@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/twksos/react-native-document-interaction-controller/issues"
+    "url": "https://github.com/twksos/react-native-document-interaction/issues"
   },
-  "homepage": "https://github.com/twksos/react-native-document-interaction-controller#readme",
+  "homepage": "https://github.com/twksos/react-native-document-interaction#readme",
   "peerDependencies": {
     "react-native": ">=0.26.0"
   },
