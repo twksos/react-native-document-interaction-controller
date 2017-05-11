@@ -41,13 +41,15 @@ RCT_EXPORT_METHOD(preview:(NSString *)fileURL resolver:(RCTPromiseResolveBlock)r
         NSError *error = [[NSError alloc] init];
         reject(@"cannot_preview", @"Can not preview", error);
     } else {
-        BOOL canOpen = [viewController presentPreviewAnimated:YES];
-        NSMutableArray *result = [[NSMutableArray alloc] init];
-        if(canOpen) resolve(result);
-        else {
-            NSError *error = [[NSError alloc] init];
-            reject(@"cannot_handle_file", @"Can not handle file", error);
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            BOOL canOpen = [viewController presentPreviewAnimated:YES];
+            NSMutableArray *result = [[NSMutableArray alloc] init];
+            if(canOpen) resolve(result);
+            else {
+                NSError *error = [[NSError alloc] init];
+                reject(@"cannot_handle_file", @"Can not handle file", error);
+            }
+        });
     }
 }
 @end
