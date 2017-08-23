@@ -1,6 +1,6 @@
 {
   "name": "react-native-document-interaction",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React Native Document Interaction",
   "main": "index.js",
   "scripts": {
